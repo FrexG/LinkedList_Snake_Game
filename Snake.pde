@@ -72,9 +72,7 @@ class SnakeList{
     
     if(head.v.y <= 0) head.v.y = height - 1;
     if(head.v.y >= height) head.v.y = 1;
-    
-    //head.v.x = constrain(head.v.x, 0, width-w);
-    //head.v.y = constrain(head.v.y, 0, height-w);
+
   }
   public void dir(float x,float y){
     xSpeed = x;
@@ -91,7 +89,7 @@ class SnakeList{
         println("Game Over!!!");
         println("You're Score is: "+Size());
         exit();
-      }//current.sn.update();
+      }
             
       current = current.prev;
     }
